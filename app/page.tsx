@@ -1,101 +1,102 @@
-import Image from "next/image";
+import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex flex-col items-center justify-center p-4">
+      <div className="max-w-4xl w-full bg-white shadow-xl rounded-xl p-8 space-y-8">
+        {/* Hero Section */}
+        <div className="text-center">
+          <h1 className="text-5xl font-extrabold mb-4 text-blue-900">
+            Site Intro
+          </h1>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Amplify Your Online Presence and Discover Unique Websites
+          </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        {/* What is Site Intro */}
+        <div className="bg-blue-50 p-6 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 text-blue-800">
+            What is Site Intro?
+          </h2>
+          <p className="text-gray-700 text-lg mb-4">
+            Site Intro is a revolutionary platform designed to help website owners showcase their digital creations, expand their audience, and connect with potential users or customers.
+          </p>
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-bold text-blue-700 mb-2">Visibility</h3>
+              <p className="text-gray-600">Get discovered by a global audience interested in unique websites.</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-bold text-blue-700 mb-2">Networking</h3>
+              <p className="text-gray-600">Connect with other website creators and potential collaborators.</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-bold text-blue-700 mb-2">Growth</h3>
+              <p className="text-gray-600">Increase traffic and engagement for your website.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* How to Submit */}
+        <div className="bg-green-50 p-6 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 text-green-800">
+            How to Submit Your Website
+          </h2>
+          <div className="space-y-4">
+            <div className="flex items-center">
+              <span className="mr-4 text-2xl font-bold text-green-600">1</span>
+              <p className="text-gray-700">Create a compelling profile that highlights your website's unique value proposition.</p>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-4 text-2xl font-bold text-green-600">2</span>
+              <p className="text-gray-700">Provide key details including website URL, description, target audience, and key features.</p>
+            </div>
+            <div className="flex items-center">
+              <span className="mr-4 text-2xl font-bold text-green-600">3</span>
+              <p className="text-gray-700">Our team will review and feature your site in our curated collection.</p>
+            </div>
+            <button 
+              className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 mt-4"
+            >
+              Submit Your Website
+            </button>
+          </div>
+        </div>
+
+        {/* New Sites on Site Intro */}
+        <div className="bg-gray-50 p-6 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 text-gray-800">
+            New Sites on Site Intro
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-semibold text-lg text-blue-800">Randzy</h3>
+              <p className="text-gray-600 mb-2">
+                An innovative platform connecting website creators and explorers.
+              </p>
+              <Link 
+                href="https://www.randzy.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Visit Randzy.com
+              </Link>
+            </div>
+            {/* Add more new sites here in future */}
+            <div className="bg-white p-4 rounded-lg shadow-md opacity-50 flex items-center justify-center">
+              <p className="text-gray-500">More sites coming soon!</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className="text-center border-t pt-4 text-sm text-gray-500">
+          <p>Launched: January 11, 2025</p>
+        </div>
+      </div>
     </div>
   );
 }
