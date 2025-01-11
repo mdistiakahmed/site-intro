@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,20 +21,29 @@ export default function Home() {
             What is Site Intro?
           </h2>
           <p className="text-gray-700 text-lg mb-4">
-            Site Intro is a revolutionary platform designed to help website owners showcase their digital creations, expand their audience, and connect with potential users or customers.
+            Site Intro is a revolutionary platform designed to help website
+            owners showcase their digital creations, expand their audience, and
+            connect with potential users or customers.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="font-bold text-blue-700 mb-2">Visibility</h3>
-              <p className="text-gray-600">Get discovered by a global audience interested in unique websites.</p>
+              <p className="text-gray-600">
+                Get discovered by a global audience interested in unique
+                websites.
+              </p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="font-bold text-blue-700 mb-2">Networking</h3>
-              <p className="text-gray-600">Connect with other website creators and potential collaborators.</p>
+              <p className="text-gray-600">
+                Connect with other website creators and potential collaborators.
+              </p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="font-bold text-blue-700 mb-2">Growth</h3>
-              <p className="text-gray-600">Increase traffic and engagement for your website.</p>
+              <p className="text-gray-600">
+                Increase traffic and engagement for your website.
+              </p>
             </div>
           </div>
         </div>
@@ -47,19 +56,26 @@ export default function Home() {
           <div className="space-y-4">
             <div className="flex items-center">
               <span className="mr-4 text-2xl font-bold text-green-600">1</span>
-              <p className="text-gray-700">Create a compelling profile that highlights your website's unique value proposition.</p>
+              <p className="text-gray-700">
+                Create a compelling profile that highlights your website&apos;s
+                unique value proposition.
+              </p>
             </div>
             <div className="flex items-center">
               <span className="mr-4 text-2xl font-bold text-green-600">2</span>
-              <p className="text-gray-700">Provide key details including website URL, description, target audience, and key features.</p>
+              <p className="text-gray-700">
+                Provide key details including website URL, description, target
+                audience, and key features.
+              </p>
             </div>
             <div className="flex items-center">
               <span className="mr-4 text-2xl font-bold text-green-600">3</span>
-              <p className="text-gray-700">Our team will review and feature your site in our curated collection.</p>
+              <p className="text-gray-700">
+                Our team will review and feature your site in our curated
+                collection.
+              </p>
             </div>
-            <button 
-              className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 mt-4"
-            >
+            <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 mt-4">
               Submit Your Website
             </button>
           </div>
@@ -74,11 +90,12 @@ export default function Home() {
             <div className="bg-white p-4 rounded-lg shadow-md">
               <h3 className="font-semibold text-lg text-blue-800">Randzy</h3>
               <p className="text-gray-600 mb-2">
-                An innovative platform connecting website creators and explorers.
+                An innovative platform connecting website creators and
+                explorers.
               </p>
-              <Link 
-                href="https://www.randzy.com" 
-                target="_blank" 
+              <Link
+                href="https://www.randzy.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
               >
